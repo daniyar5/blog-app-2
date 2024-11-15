@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+}
+html {
+    background: linear-gradient(0deg, rgba(34,127,195,1) 0%, rgba(145,35,100,1) 100%);
+    background-repeat: no-repeat;
+}
+
+
+.create-btn {
+    align-items: center;
+    margin: 20px 0 30px;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    line-height: 1;
+    padding: 0 16px 0 16px;
+    transition: box-shadow .15s,transform .15s;
+    font-size: 18px;
+    width: 100%
+}
+
+
+.create-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 100px
+}
+
+.inner-main{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header h1 {
+    font-size: 2.7rem;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+header nav {
+    display:flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header .link {
+    color: aqua
+}
+
+.window{
+    color: white;
+    width: 80%;
+}
+
+.inner-window{
+    width: 100%;
+    height: 250px;
+    background-color: #36395A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window p{
+    font-size:x-large
+}
+
+
+.post{
+    width: 80%;
+    background-color: #36395A;
+    color: white;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 30px;
+    overflow-wrap: break-word;
+    margin-bottom: 50px;
+}
+
+.post p{
+    margin: 7px
+}
+
+.title{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+.desc{
+    font-size: 20px;
+    color:aqua;
+}
+
+.author{
+    font-style: italic;
+}
+
+
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+
+footer {
+    background-color: #36395A;
+    color: white;
+    margin-top:auto
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-form{
+    margin: 30px 0 60px
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+textarea {
+    font-family: "Outifit", sans-serif;
+    font-size: medium;
+    height: 250px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    width: 80%;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    background-color:#36395A
+}
+
+input[type=text]{
+    font-family: "Outfit", sans-serif;
+    font-size: large;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 0 0 15px;
+    color: white;
+    background-color:#36395A;
+    width: 80%
+  }
+
+::placeholder{
+    color:rgb(254, 53, 210)
+}
+
+
+.btns button{
+    width: 100px;
+    margin: 15px 0 10px
+}
+
+.btns{
+    display: flex;
+    gap: 30px
+}
+
+@media(max-width: 550px){
+    header h1{
+        font-size: 35px
+    }
+
+    header .link{
+        font-size:13px
+    }
+
+    .window p{
+        font-size: 20px;
+    }
+}
